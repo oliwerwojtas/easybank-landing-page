@@ -3,7 +3,7 @@ import hamburger from "../assets/icon-hamburger.svg";
 import close from "../assets/icon-close.svg";
 import { useState, useEffect } from "react";
 import { navLinks } from "../helpers";
-
+import { Button } from "./reusable/Button";
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -29,14 +29,18 @@ export const Navbar = () => {
             <div className="flex justify-around w-3/5">
               <ul className="flex">
                 {navLinks.map((link, i) => (
-                  <li onClick={() => setOpen(!open)} key={i} className="block ml-2">
+                  <li
+                    onClick={() => setOpen(!open)}
+                    key={i}
+                    className="block hover:border-b-4 ml-2"
+                  >
                     <a className="text-gray-400 hover:text-gray-600 text-xs" href={link.path}>
                       {link.name}
                     </a>
                   </li>
                 ))}
               </ul>
-              <span className="ml-auto">xD</span>
+              <Button className="ml-auto" />
             </div>
           ) : (
             <button

@@ -1,15 +1,17 @@
 import { Navbar } from "./components/Navbar";
-
-function App() {
+import { Main } from "./components/Main";
+const App = () => {
   return (
     <>
       <div>
         <Navbar />
       </div>
-      <main></main>
+      <main>
+        <Main />
+      </main>
       <div></div>
     </>
   );
-}
+};
 
 export default App;
