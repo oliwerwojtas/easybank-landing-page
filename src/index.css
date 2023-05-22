@@ -10,7 +10,7 @@
 }
 
 html {
-  font-size: 1.4rem;
+  font-size: 18px;
 }
 
 body {
@@ -40,11 +40,62 @@ ul {
 
 @media (min-width: 390px) {
   html {
-    font-size: 1.6rem;
+    font-size: 22px;
   }
   header,
   section,
   footer {
     padding: 2rem;
+  }
+}
+
+.picture {
+  background-image: url("../src/assets/bg-intro-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .picture {
+    position: relative;
+    align-self: center;
+    width: 120%;
+    height: 100%;
+    background-image: url("../src/assets/bg-intro-desktop.svg");
+  }
+
+  .picture img {
+    position: absolute;
+    top: 0;
+    left: 5rem;
+    display: block;
+    max-width: unset;
+    height: 115%;
+  }
+}
+
+@media (min-width: 556px) {
+  .list div {
+    width: calc(50% - 1rem);
+  }
+}
+
+@media (min-width: 1024px) {
+  .section img {
+    margin: 0;
+  }
+
+  .section p {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section > div:nth-of-type(1) p {
+    max-width: 28rem;
+  }
+
+  .list div {
+    width: calc(25% - 1.5rem);
   }
 }
