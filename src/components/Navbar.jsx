@@ -32,9 +32,9 @@ export const Navbar = () => {
                   <li
                     onClick={() => setOpen(!open)}
                     key={i}
-                    className="block hover:border-b-4 ml-2"
+                    className=" block hover:border-b-4 border-limeGreen ml-2"
                   >
-                    <a className="text-gray-400 hover:text-gray-600 text-xs" href={link.path}>
+                    <a className="text-gray-400 text-xs" href={link.path}>
                       {link.name}
                     </a>
                   </li>

@@ -18,7 +18,7 @@ export const About = () => {
           {items.map((item, i) => (
             <div key={i}>
               <img className="block mx-auto" src={item.img} alt="" />
-              <p className="text-center my-6 font-normal">{item.title}</p>
+              <p className="text-center my-6 font-normal text-md">{item.title}</p>
               <p className="text-center text-xs text-grayishBlue">{item.text}</p>
             </div>
           ))}
