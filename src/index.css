@@ -1,6 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .li {
+    color: white;
+    font-size: 0.8rem;
+  }
+  .li:hover {
+    color: limeGreen;
+  }
+}
 *,
 *::after,
 *:before {
@@ -32,7 +42,7 @@ section,
 footer {
   max-width: 220rem;
   margin: 0 auto;
-  padding: 4rem;
+  padding: 1rem;
 }
 ul {
   list-style-type: none;

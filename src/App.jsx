@@ -2,6 +2,8 @@ import { Navbar } from "./components/Navbar";
 import { Main } from "./components/Main";
 import { About } from "./components/About";
 import { Articles } from "./components/Articles";
+import { Footer } from "./components/Footer";
+
 const App = () => {
   return (
     <>
@@ -13,7 +15,9 @@ const App = () => {
         <About />
         <Articles />
       </main>
-      <div></div>
+      <div>
+        <Footer />
+      </div>
     </>
   );
 };

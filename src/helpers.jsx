@@ -6,6 +6,11 @@ import currency from "../src/assets/image-currency.jpg";
 import restaurant from "../src/assets/image-restaurant.jpg";
 import plane from "../src/assets/image-plane.jpg";
 import confetti from "../src/assets/image-confetti.jpg";
+import fb from "../src/assets/icon-facebook.svg";
+import yt from "../src/assets/icon-youtube.svg";
+import tw from "../src/assets/icon-twitter.svg";
+import pr from "../src/assets/icon-pinterest.svg";
+import ig from "../src/assets/icon-instagram.svg";
 
 export const navLinks = [
   { path: "#", name: "Home" },
@@ -63,4 +68,12 @@ export const articles = [
     title: "Our invite-only Beta accounts are now live!",
     text: "After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site …",
   },
+];
+
+export const socials = [
+  { path: "#", icon: fb },
+  { path: "#", icon: yt },
+  { path: "#", icon: tw },
+  { path: "#", icon: pr },
+  { path: "#", icon: ig },
 ];
