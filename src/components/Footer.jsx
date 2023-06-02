@@ -17,7 +17,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className="text-lg lg:flex lg:gap-16 lg:text-left lg:mr-12 xl:mr-48">
-          <ul className="">
+          <ul>
             <li className="li">
               <a className="block" href="#">
                 About Us

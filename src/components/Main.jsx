@@ -8,8 +8,8 @@ export const Main = () => {
         <img src={mockups} alt="" />
       </figure>
 
-      <div className="flex flex-col px-8  md:w-3/4 md:pl-16 pr-0">
-        <h1 className="text-[#2D314D] text-base md:text-3xl mb-4">
+      <div className="flex flex-col px-8  md:w-3/4 md:pl-16">
+        <h1 className="text-[#2D314D] text-3xl text-center mb-4 md:text-left">
           Next generation digital banking
         </h1>
         <p className="text-grayishBlue text-xs font-normal mb-6 text-justify md:text-sm md:text-left">

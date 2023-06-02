@@ -22,7 +22,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <div className="fixed z-10 top-0 w-full bg-white shadow-md">
+      <div className="fixed z-30 top-0 w-full bg-white shadow-md ">
         <header className="flex items-center justify-between w-full py-1">
           <img src={logo} alt="logo" />
           {windowWidth > 1024 ? (
@@ -40,7 +40,7 @@ export const Navbar = () => {
                   </li>
                 ))}
               </ul>
-              <Button className="ml-auto" />
+              <Button className="ml-auto " />
             </div>
           ) : (
             <button
@@ -54,7 +54,7 @@ export const Navbar = () => {
           <ul
             className={`${
               open && windowWidth < 1024
-                ? "fixed top-14 left-0.5 block w-11/12 mx-2 mt-2 pb-1 text-center rounded-md bg-white"
+                ? "fixed z-20 top-14 left-1 block w-11/12 mx-2 mt-2 pb-1 text-center rounded-md bg-white md:left-4 "
                 : "hidden"
             }`}
           >
@@ -71,7 +71,7 @@ export const Navbar = () => {
       {open && (
         <div
           onClick={() => setOpen(false)}
-          className="fixed z-8 top-0 left-0 w-full h-screen bg-gray-300/80"
+          className="fixed z-10 top-0 left-0 w-full h-screen bg-gray-300/80"
         />
       )}
     </>
